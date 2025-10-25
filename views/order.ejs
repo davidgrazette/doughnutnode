@@ -1,0 +1,53 @@
+<%- include("includes/head.ejs") %>
+<body>
+    <form id="order" action="/order" method="POST">
+      <fieldset>
+        <legend>order</legend>
+        <h5>How many?</h5>
+        <label for="half-dozen">half dozen</label>
+        <input type="radio" id="half-dozen" value= "half dozen" name="amount" />
+        <label for="one-dozen">one dozen</label>
+        <input type="radio" id="one-dozen" value= "one dozen"name="amount" />
+        <label for="one-half-dozen">1 1/2 dozen</label>
+        <input type="radio" id="one-half-dozen" value= "one and one half dozen"name="amount" />
+        <label for="two-dozen">two dozen</label>
+        <input type="radio" id="two-dozen" value= "two dozen" name="amount" />
+        <label for="two-half-dozen">2 1/2 dozen</label>
+        <input type="radio" id="two-half-dozen" value= "two and one half dozen" name="amount" />
+        <label for="three-dozen">three dozen</label>
+        <input type="radio" id="three-dozen" value= "three dozen" name="amount" />
+        <h5>Flavor(s)</h5>
+        <label for="pumpkin">pumpkin</label>
+        <input type="radio" id="pumpkin" value="pumpkin" name="type" />
+        <label for="mixed">mixed</label>
+        <input type="radio" id="mixed" value="mixed" name="type" />
+        <label for="chocolate">chocolate</label>
+        <input type="radio" id="chocolate" value="chocolate" name="type" />
+        <h5>Delivery Address</h5>
+        <textarea id="delivery-address" rows="5" cols="30"></textarea>
+        <h5>Order/Delivery Notes</h5>
+        <textarea id="order-notes" rows="5" cols="30"></textarea>
+        <h5>Contact Information</h5>
+        <div>
+          <label for="order-name">Name</label>
+          <input type="text" id="order-name" />
+        </div>
+        <label for="phone-number">Phone Number</label>
+        <input type="tel" id="phone-number" />
+        <div class="phone">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" required value="Email" placeholder="E-mail"/>
+        </div>
+        <div>
+          <section class="cost">
+            <h6>cost per one dozen: one Bitcoin</h6>
+          </section>
+        </div>
+        <div>
+          <button type="submit" id="submit">order</button>
+        </div>
+      </fieldset>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+h1 {
+    color: lightblue;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-right: 50px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a.active {
+  color: white;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 30px;
+}
+
+#order {
+  text-align: center;
+}
