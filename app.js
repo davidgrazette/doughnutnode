@@ -10,18 +10,19 @@ const app = express();
 app.set("view engine", "ejs");
 // app.set("views", "views");
 
+const errorController = require("./controllers/error");
 
 const homeRoutes = require("./routes/home");
-const adminData = require("./routes/order");
-const routes404 = require("./routes/admin");
+const orderRoutes = require("./routes/order");
 
 app.use(bodyparser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use(homeRoutes);
-app.use(adminData.routes);
+app.use(orderRoutes);
 
-app.use(routes404);
+
+app.use(errorController.get404);
 
 
 app.listen(3000);
