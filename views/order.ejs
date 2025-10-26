@@ -1,4 +1,4 @@
-<%- include("includes/head.ejs") %>
+<%- include("includes/navigation.ejs") %>
 <body>
     <form id="order" action="/order" method="POST">
       <fieldset>
@@ -24,19 +24,19 @@
         <label for="chocolate">chocolate</label>
         <input type="radio" id="chocolate" value="chocolate" name="type" />
         <h5>Delivery Address</h5>
-        <textarea id="delivery-address" rows="5" cols="30"></textarea>
+        <textarea name="address" id="delivery-address" rows="5" cols="30"></textarea>
         <h5>Order/Delivery Notes</h5>
-        <textarea id="order-notes" rows="5" cols="30"></textarea>
+        <textarea name="notes" id="order-notes" rows="5" cols="30"></textarea>
         <h5>Contact Information</h5>
         <div>
           <label for="order-name">Name</label>
-          <input type="text" id="order-name" />
+          <input type="text" name="name" id="order-name" />
         </div>
         <label for="phone-number">Phone Number</label>
-        <input type="tel" id="phone-number" />
+        <input type="tel" name="phone" id="phone-number" />
         <div class="phone">
           <label for="email">Email Address</label>
-          <input type="email" id="email" required value="Email" placeholder="E-mail"/>
+          <input type="email" name="email" id="email" required value="Email" placeholder="E-mail"/>
         </div>
         <div>
           <section class="cost">

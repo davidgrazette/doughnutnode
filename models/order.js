@@ -18,10 +18,14 @@ const p = path.join(
     }
 
 module.exports = class Order {
-    constructor(amount, type, email)   {
+    constructor(amount, type, email, phone, name, address, notes)   {
         this.amount = amount;
         this.type = type;
         this.email = email;
+        this.phone = phone;
+        this.name = name; 
+        this.address = address;
+        this.notes = notes;
     }
 
     save()  {

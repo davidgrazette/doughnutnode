@@ -5,7 +5,20 @@ exports.getOrder = (req, res, next) => {
 }
 
 exports.postOrder = (req, res, next) => {
-    const order = new Order(req.body.amount);
+    const name = req.body.name;  
+    const phone = req.body.phone;
+    const email = req.body.email; 
+    const type = req.body.type; 
+    const amount = req.body.amount; 
+    const address = req.body.address;
+    const notes = req.body.notes;
+    const order = new Order(name, phone, email, type, amount, address, notes);
     order.save();
     res.redirect("/");
 }
+
+exports.getCheckout = (req, res, next) => {
+    res.render("checkout", {pageTitle: "checkout", path:"/checkout"});
+}
+
+exports.postCheckout = (req, res, next) => {};
