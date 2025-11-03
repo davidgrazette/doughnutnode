@@ -14,7 +14,7 @@ exports.postOrder = (req, res, next) => {
     const notes = req.body.notes;
     const order = new Order(name, phone, email, type, amount, address, notes);
     order.save();
-    res.redirect("/");
+    res.redirect("/checkout");
 }
 
 exports.getCheckout = (req, res, next) => {

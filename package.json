@@ -2,9 +2,13 @@
   "name": "doughnutnode",
   "version": "1.0.0",
   "main": "app.js",
+  "engines": {
+    "node": "22.17.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js", 
+    "start:dev": "nodemon app.js"
   },
   "author": "David Grazette",
   "license": "ISC",

@@ -12,7 +12,7 @@ app.set("view engine", "ejs");
 
 const errorController = require("./controllers/error");
 
-const mongoConnect = require("./util/database");
+const mongoConnect = require("./util/database").mongoConnect;
 
 const homeRoutes = require("./routes/home");
 const orderRoutes = require("./routes/order");
@@ -27,9 +27,6 @@ app.use(orderRoutes);
 app.use(errorController.get404);
 
 
-app.listen(3000);
-
-mongoConnect((client) => {
-    console.log(client);
+mongoConnect(() => {
     app.listen(3000);
 });
