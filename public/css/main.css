@@ -1,8 +1,21 @@
-#nav-bar {
+ul {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   margin-right: 50px;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  text-shadow: 1px 1px 1px black;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
 }
 
 a {
@@ -28,13 +41,13 @@ img {
   text-align: center;
 }
 
-.center { 
+.center {
   text-align: center;
   margin-top: 150px;
 }
 
 .btn {
   border: black, solid 2px;
-  border-radius: 10px; 
+  border-radius: 10px;
   padding: 5px;
 }
