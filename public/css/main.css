@@ -1,3 +1,8 @@
+body {
+  font-family: "Stack Sans Text", sans-serif;
+  font-size: 1.15rem;
+}
+
 ul {
   display: flex;
   justify-content: space-around;
@@ -9,10 +14,6 @@ li {
   list-style: none;
 }
 
-header {
-  text-shadow: 1px 1px 1px black;
-}
-
 a:hover {
   background-color: black;
   color: white;
@@ -21,6 +22,7 @@ a:hover {
 a {
   color: black;
   text-decoration: none;
+  /* text-shadow: 0px 1px 1px rgb(45, 45, 45); */
 }
 
 a.active {
@@ -28,6 +30,7 @@ a.active {
 }
 
 img {
+  padding-top: 4.30rem;
   display: block;
   margin: auto;
   width: 30vw;
