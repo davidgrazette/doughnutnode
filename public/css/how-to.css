@@ -1,0 +1,149 @@
+#index {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+#navbar {
+  font-size: 12px;
+  margin-right: 80%;
+  position: absolute;
+  top: 3%;
+  left: 3vw;
+}
+
+#navbar li {
+  border: outset #999999 10px;
+  padding: 12px;
+  display: flex;
+  margin: 5px;
+}
+
+/* #introduction ul {
+  text-indent: 15px;
+}  */
+
+ main {
+  font-size: 16px;
+  position: absolute;
+  top: 10vw;
+  right: 10vw;
+  left: 25vw;
+  bottom: 100%;
+}
+
+img {
+  width: 30vw;
+  display: block;
+  margin: auto;
+}
+
+#ingredients ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#ingredients li {
+  margin-top: 0;
+  list-style-type: none;
+}
+
+.bold {
+  font-weight: 600;
+  animation-name: bold-animation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 10s;
+  animation;
+}
+
+@keyframes bold-animation {
+  0% {
+    font-size: 16px;
+  }
+  50% {
+    font-size: 20px;
+    color: white;
+  }
+  100% {
+    font-size: 16px;
+  }
+}
+
+.indent-one {
+  padding-inline-start: 100px;
+  list-style-type: none;
+}
+
+.indent-two {
+  padding-inline-start: 35%;
+  list-style-type: none;
+}
+
+/* @media print (max-width: 100px) {
+  html {
+    background-color: black;
+    text: white;
+  }
+} */
+
+div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.foot-help {
+  list-style-type: none;
+  text-align: center;
+}
+
+footer li {
+  margin: 5px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#instagram {
+  font-size: 50px;
+  margin-right: 5vw;
+  text-align: right;
+  z-index: 1;
+  right: 25px;
+}
+
+@media (max-width: 600px) {
+  aside {
+    visibility: hidden;
+  }
+  main {
+    position: static;
+  }
+  img {
+    width: 75vw;
+  }
+  .foot-help {
+    padding: 0;
+  }
+  #instagram {
+    position: absolute;
+    font-size: 50px;
+    top: 3545px;
+    right: 40%;
+    /* bottom: 10px; */
+  }
+  hr {
+    visibility: hidden; 
+  }
+  footer {
+    border-top: black double 5px;
+  }
+}
+
+.email-finish {
+  text-align: center;
+}
